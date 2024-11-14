@@ -9,7 +9,7 @@ function Footer() {
         {/* 1ST */}
         <div className="space-y-8 flex flex-col md:items-start items-center md:text-left text-center">
           <img
-            src={"/Image/footerimg.webp"}
+            src={"/Image/pic.jfif"}
             alt="Footer Image"
             // width={100}
             // height={100}
