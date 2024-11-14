@@ -70,8 +70,11 @@ function Page() {
                   Comments {comments.length}
                 </div>
                 <div className="space-y-2">
-                  {comments.map((comment: string) => (
-                    <p className="bg-gray-600 text-white w-fit p-2 rounded">
+                  {comments.map((comment: string, index: number) => (
+                    <p
+                      key={index}
+                      className="bg-gray-600 text-white w-fit p-2 rounded"
+                    >
                       {comment}
                     </p>
                   ))}
