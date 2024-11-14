@@ -1,4 +1,4 @@
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -8,11 +8,11 @@ function Footer() {
       <div className="grid  md:grid-cols-3 grid-cols-1 md:px-20 px-2 sm:space-y-0 space-y-16">
         {/* 1ST */}
         <div className="space-y-8 flex flex-col md:items-start items-center md:text-left text-center">
-          <img
+          <Image
             src={"/Image/pic.jfif"}
             alt="Footer Image"
-            // width={100}
-            // height={100}
+            width={100}
+            height={100}
             className="rounded-full md:w-28 w-20 md:h-28 h-20"
           />
           <p>
