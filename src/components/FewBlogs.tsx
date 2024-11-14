@@ -2,8 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import BlogData from "../../Blogs Data";
 
+type Blog = {
+  id: number;
+  username: string;
+  profilePic: string;
+  postPic: string;
+  date: string;
+  title: string;
+  description: string;
+};
+
 function FewBlogs() {
-  let data = BlogData.slice(0,3)
+  const data = BlogData.slice(0,3)
   return (
     <section className="px-5 sm:px-32 md:px-52 py-52 space-y-20 ">
       <div className="flex justify-center font-thin text-[#3A414E]">
@@ -13,7 +23,7 @@ function FewBlogs() {
       <div className="lg:flex lg:space-x-10 space-x-0 lg:space-y-0 space-y-16">
         {/* LEFT */}
         <div className="lg:w-[70%] w-full space-y-20">
-          {data.map((blog: any) => (
+          {data.map((blog: Blog) => (
             <div key={blog.id} className="space-y-5 ">
               <Image
                 src={blog.postPic}

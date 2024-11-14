@@ -10,7 +10,7 @@ function Page() {
           <p className="px-10 sm:px-20 md:px-28 lg:px-72">
             Welcome to our site This is a space where we curate and share a wide
             range of insightful, entertaining, and informative blogs from
-            various writers around the web. Whether you're looking for the
+            various writers around the web. Whether you&apos;re looking for the
             latest tech trends, personal growth stories, or fun tutorials, our
             blog has something for everyone.
           </p>
@@ -18,7 +18,7 @@ function Page() {
             Our mission is to deliver high-quality, diverse content to our
             readers by gathering articles from multiple sources. We aim to
             create a place where knowledge seekers and casual readers alike can
-            find something interesting, no matter what they're looking for. Our
+            find something interesting, no matter what they&apos;re looking for. Our
             blog covers a wide range of topics, including technology, lifestyle,
             health, education, travel, and much more. We pull content from
             various sources to ensure you have access to the latest and most

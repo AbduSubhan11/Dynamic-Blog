@@ -17,8 +17,8 @@ function Footer() {
           />
           <p>
             Welcome to our site, we explore topics e.g., tech trends, lifestyle
-            tips, personal growth, etc. Whether you're here for insightful
-            articles or thought-provoking discussions, we're glad to have you.
+            tips, personal growth, etc. Whether you&apos;re here for insightful
+            articles or thought-provoking discussions, we&apos;re glad to have you.
           </p>
           {/* SOCIAL ICONS */}
           <div className="flex items-center space-x-4">

@@ -4,22 +4,32 @@ import { useParams } from "next/navigation";
 import React, { useState } from "react";
 import BlogData from "../../../../Blogs Data";
 
+type Blog = {
+  id: number;
+  username: string;
+  profilePic: string;
+  postPic: string;
+  date: string;
+  title: string;
+  description: string;
+};
+
 function Page() {
   const param = useParams();
   const [commentValue, setCommentValue] = useState("");
-  const [comments, setComments] = useState<any>([]);
+  const [comments, setComments] = useState<string[]>([]);
   const publishBtnHandler = () => {
-    setComments((prev: []) => [...prev, commentValue]);
-    setCommentValue("")
+    setComments((prev: string[]) => [...prev, commentValue]);
+    setCommentValue("");
   };
-  const data = BlogData.filter((blog: any) => blog.id === Number(param.id));
+  const data = BlogData.filter((blog: Blog) => blog.id === Number(param.id));
 
   return (
     <section className="px-5 sm:px-32 md:px-52 py-10 space-y-20 ">
       <div className="lg:flex lg:space-x-10 space-x-0 lg:space-y-0 space-y-16">
         {/* LEFT */}
         <div className="lg:w-[70%] w-full">
-          {data.map((blog: any) => (
+          {data.map((blog: Blog) => (
             <div key={blog.id} className=" text-black space-y-8">
               <div className="flex items-center space-x-3">
                 <Image
@@ -60,7 +70,7 @@ function Page() {
                   Comments {comments.length}
                 </div>
                 <div className="space-y-2">
-                  {comments.map((comment: any) => (
+                  {comments.map((comment: string) => (
                     <p className="bg-gray-600 text-white w-fit p-2 rounded">
                       {comment}
                     </p>

@@ -1,11 +1,22 @@
 import Link from "next/link";
 import BlogsData from "../../../Blogs Data";
 import Image from "next/image";
+
+type Blog = {
+  id: number;
+  username: string;
+  profilePic: string;
+  postPic: string;
+  date: string;
+  title: string;
+  description: string;
+};
+
 function page() {
   return (
     <section className="px-5 sm:px-32 md:px-24 lg:px-52 md:py-10 py-4 space-y-10 text-black">
       <div className="space-y-10">
-        {BlogsData.map((blog: any) => (
+        {BlogsData.map((blog: Blog) => (
           <div
             key={blog.id}
             className="grid md:grid-cols-2 grid-cols-1 md:h-96 h-fit overflow-hidden border"
