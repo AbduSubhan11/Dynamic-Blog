@@ -44,7 +44,7 @@ function Page() {
                   <p>{new Date(blog.date).toLocaleString()}</p>
                 </div>
               </div>
-              <div className="font-bold font-serif md:text-3xl text-xl pr-40 text-[#3A414E]">
+              <div className="font-bold font-serif md:text-3xl text-xl sm:pr-40 text-[#3A414E]">
                 {blog.title}
               </div>
               <div className=" text-[#797979]">{blog.description}</div>
