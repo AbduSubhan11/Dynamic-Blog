@@ -1,12 +1,18 @@
+import Image from "next/image";
 import React from "react";
 
 function Page() {
   return (
     <section className="bg-white ">
-      <div
-        className="max-w-full h-[600px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/Image/infobg.webp')" }}
-      ></div>
+      <div className="w-full ">
+        <Image
+          src={"/Image/infobg.webp"}
+          alt="Info Pic"
+          width={1000}
+          height={100}
+          className="w-full h-96 object-cover"
+        />
+      </div>
       <div className="flex flex-col justify-center items-center space-y-8">
         <div className="text-center space-y-8">
           <h1 className="text-8xl font-bold">Info.</h1>
