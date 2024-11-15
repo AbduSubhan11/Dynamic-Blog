@@ -9,7 +9,7 @@ function Footer() {
         {/* 1ST */}
         <div className="space-y-8 flex flex-col md:items-start items-center md:text-left text-center">
           <Image
-            src={"https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1/f451a206-11c8-4e3d-8936-143d0a7e65bb.png"}
+            src={"/Image/pic.jfif"}
             alt="Footer Image"
             width={100}
             height={100}
