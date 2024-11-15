@@ -1,12 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import infoPic from "../../../Public/Image/infobg.webp"
 
 function Page() {
   return (
     <section className="bg-white ">
       <div className="w-full ">
         <Image
-          src={"/Image/infobg.webp"}
+          src={infoPic}
           alt="Info Pic"
           width={1000}
           height={100}
