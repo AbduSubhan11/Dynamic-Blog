@@ -3,7 +3,10 @@ import React from "react";
 function Page() {
   return (
     <section className="bg-white ">
-      <div className="max-w-full h-[600px] bg-[url('/Image/infobg.webp')] bg-cover bg-center flex items-center justify-center"></div>
+      <div
+        className="max-w-full h-[600px] bg-cover bg-center flex items-center justify-center"
+        style={{ backgroundImage: "url('/Image/infobg.webp')" }}
+      ></div>
       <div className="flex flex-col justify-center items-center space-y-8">
         <div className="text-center space-y-8">
           <h1 className="text-8xl font-bold">Info.</h1>
@@ -18,11 +21,11 @@ function Page() {
             Our mission is to deliver high-quality, diverse content to our
             readers by gathering articles from multiple sources. We aim to
             create a place where knowledge seekers and casual readers alike can
-            find something interesting, no matter what they&apos;re looking for. Our
-            blog covers a wide range of topics, including technology, lifestyle,
-            health, education, travel, and much more. We pull content from
-            various sources to ensure you have access to the latest and most
-            relevant posts across different domains.
+            find something interesting, no matter what they&apos;re looking for.
+            Our blog covers a wide range of topics, including technology,
+            lifestyle, health, education, travel, and much more. We pull content
+            from various sources to ensure you have access to the latest and
+            most relevant posts across different domains.
           </p>
         </div>
         <div className="space-y-5 md:p-0 p-5">
@@ -50,7 +53,9 @@ function Page() {
               ></textarea>
             </div>
             <div>
-              <button className="bg-black text-white w-full h-10">Submit</button>
+              <button className="bg-black text-white w-full h-10">
+                Submit
+              </button>
             </div>
           </form>
         </div>
