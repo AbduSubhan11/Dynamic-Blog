@@ -23,7 +23,7 @@ function NavBar() {
       <div
         className={`md:space-x-4 text-xl ${
           isHamburger
-            ? "fixed flex flex-col bg-white right-0 top-0 h-screen w-52 px-10 py-32 space-y-5 text-2xl"
+            ? "fixed flex flex-col bg-[#14213d] right-0 top-0 h-screen w-52 px-10 py-32 space-y-5 text-2xl"
             : "lg:flex hidden"
         }`}
       >
@@ -106,17 +106,17 @@ function NavBar() {
           onClick={hamburHandler}
         >
           <span
-            className={`block h-[3px] w-full bg-black transition-transform duration-300 ease-in-out ${
+            className={`block h-[3px] w-full bg-white transition-transform duration-300 ease-in-out ${
               isHamburger ? "rotate-45 translate-y-2" : ""
             }`}
           ></span>
           <span
-            className={`block h-[3px] w-full bg-black transition-opacity duration-300 ease-in-out ${
+            className={`block h-[3px] w-1/2 bg-white transition-opacity duration-300 ease-in-out ${
               isHamburger ? "opacity-0" : ""
             }`}
           ></span>
           <span
-            className={`block h-[3px] w-full bg-black transition-transform duration-300 ease-in-out ${
+            className={`block h-[3px] w-full bg-white transition-transform duration-300 ease-in-out ${
               isHamburger ? "-rotate-45 -translate-y-2" : ""
             }`}
           ></span>
