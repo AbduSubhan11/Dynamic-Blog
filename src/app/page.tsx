@@ -40,7 +40,7 @@ export default function Home() {
 
               <Link
                 href={"/blogs"}
-                className="bg-[#222222] flex items-center w-fit px-10 py-2 text-[#F58515] hover:bg-[#F58515] hover:text-[#222222] transition-all duration-500"
+                className="bg-[#14213d] flex items-center w-fit px-10 py-2 text-[#F58515] hover:bg-[#F58515] hover:text-[#14213d] transition-all duration-500"
               >
                 All Blogs
               </Link>

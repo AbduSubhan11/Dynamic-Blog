@@ -16,7 +16,7 @@ function Page() {
       </div>
       <div className="flex flex-col justify-center items-center space-y-8">
         <div className="text-center space-y-8">
-          <h1 className="text-8xl font-bold">Info.</h1>
+          <h1 className="text-8xl font-bold text-[#14213d]">Info.</h1>
           <p className="px-10 sm:px-20 md:px-28 lg:px-72">
             Welcome to our site This is a space where we curate and share a wide
             range of insightful, entertaining, and informative blogs from
@@ -60,7 +60,7 @@ function Page() {
               ></textarea>
             </div>
             <div>
-              <button className="bg-black text-white w-full h-10">
+              <button className="bg-[#14213d] hover:text-[#14213d] hover:bg-[#F8900A] transition-colors duration-500 text-white w-full h-10">
                 Submit
               </button>
             </div>

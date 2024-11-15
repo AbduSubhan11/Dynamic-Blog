@@ -52,7 +52,7 @@ function FewBlogs() {
               </div>
               <Link
                 href={`blog/${blog.id}`}
-                className="bg-[#222222] flex items-center w-fit px-6 py-2 text-[#F58515] hover:bg-[#F58515] hover:text-[#222222] transition-all duration-500"
+                className="bg-[#14213d] flex items-center w-fit px-6 py-2 text-[#F58515] hover:bg-[#F58515] hover:text-[#14213d] transition-all duration-500"
               >
                 <h1>Read More</h1>
                 <svg
@@ -88,7 +88,7 @@ function FewBlogs() {
                 placeholder="Email"
                 className="h-12 pl-2 border"
               />
-              <button className="bg-[#222222] text-[#F8900A] p-4">
+              <button className="bg-[#14213d] text-[#F8900A] p-4">
                 SUBSCRIBE
               </button>
             </div>

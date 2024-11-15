@@ -16,7 +16,7 @@ function NavBar() {
   };
 
   return (
-    <nav className="bg-white text-[#3A414E] flex justify-between items-center border-b px-5 md:py-4 py-6 sticky top-0">
+    <nav className="bg-whit bg-[#14213d] text-[#3A414E text-[#e5e5e5] flex justify-between items-center  px-5 py-6 sticky top-0">
       <div className="font-extrabold font-serif text-2xl">
         Stories That Matter
       </div>
