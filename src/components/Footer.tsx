@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import pic from "../../Public/Image/footerimg.webp"
+import Footerpic from "../../Public/Image/footerimg.webp"
 
 function Footer() {
   return (
@@ -10,7 +10,7 @@ function Footer() {
         {/* 1ST */}
         <div className="space-y-8 flex flex-col md:items-start items-center md:text-left text-center">
           <Image
-            src={pic}
+            src={Footerpic}
             alt="Footer Image"
             width={100}
             height={100}

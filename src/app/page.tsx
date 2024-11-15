@@ -1,6 +1,8 @@
 import Image from "next/image";
 import FewBlogs from "../components/FewBlogs";
 import Link from "next/link";
+import heroImg1 from "../../Public/Image/hero 1.webp";
+import heroImg2 from "../../Public/Image/hero 2.webp";
 
 export default function Home() {
   return (
@@ -10,7 +12,7 @@ export default function Home() {
           {/* LEFT */}
           <div className="lg:w-[50%]">
             <Image
-              src={"/Image/hero 1.webp"}
+              src={heroImg1}
               alt="Hero Image 1"
               width={800}
               height={100}
@@ -20,13 +22,14 @@ export default function Home() {
           {/* RIGHT */}
           <div className="lg:w-[50%] w-full sm:p-0 p-5 gap-8 flex flex-col items-center justify-center">
             <div className="space-y-10">
-              <h1 className="text-2xl font-serif text-center text-[#3A414E]">My Thoughts</h1>
+              <h1 className="text-2xl font-serif text-center text-[#3A414E]">
+                My Thoughts
+              </h1>
               <Image
-                src={"/Image/hero 2.webp"}
+                src={heroImg2}
                 alt="Hero Image 2"
                 width={450}
                 height={100}
-                className="w-"
               />
             </div>
             <div className=" max-w-md sm:gap-20 gap-16 p-5 flex flex-col items-center justify-center">
